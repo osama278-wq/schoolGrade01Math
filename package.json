@@ -1,0 +1,28 @@
+{
+  "name": "oman-grade1-math-pwa",
+  "private": true,
+  "version": "1.0.0",
+  "description": "تطبيق ويب تعليمي تفاعلي (PWA) لمادة الرياضيات – الصف الأول الأساسي – الفصل الدراسي الأول – المنهج العماني (سلاسل كامبريدج)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "idb": "^8.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^0.21.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

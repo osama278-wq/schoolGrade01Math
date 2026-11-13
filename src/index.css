@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+/* ====== الهوية البصرية العمانية ====== */
+@theme {
+  --font-sans: "Cairo", "Noto Sans Arabic", "Segoe UI", Tahoma, system-ui, sans-serif;
+
+  --color-oman-900: #082f39;
+  --color-oman-800: #0b3d4a;
+  --color-oman-700: #0f4c5c; /* التركواز العماني العميق */
+  --color-oman-600: #14687c;
+  --color-oman-500: #1b8199;
+  --color-oman-300: #7cc3d1;
+  --color-oman-100: #d4ecf0;
+  --color-oman-50: #f0f7f8; /* خلفية ناعمة */
+
+  --color-amber-brand: #d97706; /* كهرماني دافئ */
+  --color-sand: #f6e7c8;
+  --color-dune: #e9c46a;
+  --color-palm: #2a9d8f;
+  --color-frank: #b5651d; /* لون اللبان والفخار */
+
+  --animate-pop: pop 0.35s ease-out;
+  --animate-wiggle: wiggle 0.5s ease-in-out;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-rise: rise 6s linear forwards;
+}
+
+/* حركات عامة (تُصدَّر دائماً لاستخدامها أيضاً في الأنماط المضمّنة) */
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  70% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+}
+@keyframes wiggle {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes rise {
+  from { transform: translateY(0); }
+  to { transform: translateY(-120%); }
+}
+
+@layer base {
+  html,
+  body {
+    background: var(--color-oman-50);
+    color: var(--color-oman-900);
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+  button,
+  [role="button"] {
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-amber-brand);
+    outline-offset: 2px;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* أدوات مخصّصة (Tailwind v4 @utility) – زر لمسي كبير لا يقل عن 48×48 */
+@utility btn {
+  @apply inline-flex min-h-12 min-w-12 items-center justify-center gap-2 rounded-2xl px-4 py-2 font-bold transition active:scale-95 disabled:opacity-40;
+}
+@utility btn-primary {
+  @apply btn bg-oman-700 text-white shadow-md hover:bg-oman-600;
+}
+@utility btn-amber {
+  @apply btn bg-amber-brand text-white shadow-md hover:brightness-110;
+}
+@utility btn-ghost {
+  @apply btn border-2 border-oman-100 bg-white text-oman-700 hover:border-oman-300;
+}
+@utility card {
+  @apply rounded-3xl bg-white p-4 shadow-sm ring-1 ring-oman-100;
+}
+@utility chip {
+  @apply inline-flex items-center gap-1 rounded-full bg-oman-100 px-3 py-1 text-sm font-bold text-oman-700;
+}
+
+.ltr-nums {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.drag-ghost {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%) scale(1.15);
+  filter: drop-shadow(0 6px 8px rgb(0 0 0 / 0.25));
+}
+
+/* ====== الطباعة (أوراق العمل، الخطط، السجل الرسمي، الشهادات) ====== */
+.print-only {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .no-print,
+  nav,
+  header.app-header {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-area {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+  .print-break {
+    break-before: page;
+  }
+  .avoid-break {
+    break-inside: avoid;
+  }
+  .landscape-print {
+    zoom: 0.78;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

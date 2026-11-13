@@ -1,0 +1,797 @@
+{
+  "meta": {
+    "subject": "الرياضيات",
+    "grade": "الصف الأول الأساسي",
+    "term": "الفصل الدراسي الأول",
+    "series": "سلاسل كامبريدج – المنهج العماني",
+    "book": "كتاب التلميذ (ص ٤–٤٥)",
+    "assessmentDoc": "وثيقة تقويم تعلم التلاميذ في مواد المجال الثاني (2026م)",
+    "pricesNote": "الأسعار في محطة مطعم المدرسة أسعار تعليمية افتراضية بالريال لتبسيط الحساب للصف الأول."
+  },
+  "mentalStrategies": [
+    { "code": "1Nc1", "ar": "يعرف جميع أزواج الأعداد حتى ١٠ ويسجّل حقائق الجمع والطرح المرتبطة بها", "en": "Know all number pairs to 10 and record the related addition/subtraction facts" },
+    { "code": "1Nc2", "ar": "يبدأ في معرفة أزواج الأعداد ٦، ٧، ٨، ٩، ١٠", "en": "Begin to know number pairs to 6, 7, 8, 9 and 10" },
+    { "code": "1Nc3", "ar": "يجمع أكثر من عددين صغيرين مكتشفاً أزواج العدد ١٠ (٤ + ٣ + ٦ = ١٠ + ٣)", "en": "Add more than two small numbers, spotting pairs to 10" },
+    { "code": "1Nc4", "ar": "يبدأ في استخدام أزواج العدد ١٠ لتجاوز العشرة عند الجمع والطرح (٨ + ٣: أضف ٢ ثم ١)", "en": "Begin using pairs to 10 to bridge 10 when adding/subtracting" },
+    { "code": "1Nc5", "ar": "يعرف ضعف الأعداد حتى ضعف العدد ٥ على الأقل", "en": "Know doubles to at least double 5" },
+    { "code": "1Nc6", "ar": "يجد شبه الضعف مستخدماً الضعف المعروف (٥ + ٦)", "en": "Find near doubles using doubles already known, e.g. 5 + 6" },
+    { "code": "1Nc7", "ar": "يبدأ في التعرّف على مضاعفات العدد ٢ والعدد ١٠", "en": "Begin to recognise multiples of 2 and 10" }
+  ],
+  "skills": {
+    "counting": { "label": "العدّ حتى ١٠", "lesson": 1 },
+    "makeTen": { "label": "تكوين العدد ١٠", "lesson": 2 },
+    "doubles": { "label": "الضعف", "lesson": 2 },
+    "length": { "label": "مقارنة الأطوال وقياسها", "lesson": 3 },
+    "pairs": { "label": "أزواج الأعداد", "lesson": 4 },
+    "teens": { "label": "الأعداد ١٠–٢٠", "lesson": 4 },
+    "estimate": { "label": "التقدير والعدّ", "lesson": 5 },
+    "shapes": { "label": "الأشكال والمجسمات", "lesson": 6 },
+    "patterns": { "label": "الأنماط والتماثل", "lesson": 6 },
+    "pairs7": { "label": "أزواج العدد ٧", "lesson": 7 },
+    "hundred": { "label": "لوحة المائة", "lesson": 7 },
+    "capacity": { "label": "السعة", "lesson": 8 },
+    "time": { "label": "الوقت بالساعة الكاملة", "lesson": 9 },
+    "money": { "label": "الثمن والنقود", "lesson": 9 },
+    "weight": { "label": "الأخف والأثقل", "lesson": 10 },
+    "oddEven": { "label": "الزوجي والفردي", "lesson": 11 },
+    "ordinal": { "label": "الترتيب و«بين»", "lesson": 12 },
+    "addSub": { "label": "الجمع والطرح", "lesson": 13 },
+    "numberLine": { "label": "خط الأعداد", "lesson": 13 },
+    "ordering": { "label": "ترتيب الأعداد", "lesson": 14 }
+  },
+  "units": [
+    {
+      "id": 1,
+      "title": "الوحدة الأولى: الأعداد",
+      "stage": "المرحلة الأولى: جبال الحجر وسواحل مطرح",
+      "theme": "mountains",
+      "pages": [4, 31],
+      "lessons": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    {
+      "id": 2,
+      "title": "الوحدة الثانية: الأعداد والعمليات",
+      "stage": "المرحلة الثانية: رمال الشرقية وواحات صلالة",
+      "theme": "desert",
+      "pages": [32, 45],
+      "lessons": [11, 12, 13, 14]
+    }
+  ],
+  "lessons": [
+    {
+      "id": 1,
+      "unit": 1,
+      "strand": "١ أ",
+      "place": "جبل شمس",
+      "icon": "🔢",
+      "title": "الأعداد حتى ١٠ وكم العدد؟",
+      "pages": [4, 6],
+      "bookTitles": ["الأعداد (ص ٤)", "الأعداد حتى عشرة (ص ٥)", "كم العدد؟ (ص ٦)"],
+      "intro": "هيا نعدّ معاً من واحد إلى عشرة، ثم نعرف كم عدد الأشياء في كل مجموعة.",
+      "objectives": [
+        { "code": "1Nn1", "text": "يتلو الأعداد بالترتيب من ١ إلى ١٠" },
+        { "code": "1Nn2", "text": "يقرأ الأعداد ويكتبها من ٠ إلى ١٠" },
+        { "code": "1Nn3", "text": "يعدّ الأشياء حتى ١٠ مدركاً ثبات العدد" }
+      ],
+      "mentalCodes": [],
+      "skills": ["counting"],
+      "canDo": ["أستطيع أن أعدّ من ١ إلى ١٠", "أستطيع أن أعرف كم عدد الأشياء في مجموعة", "أستطيع أن أقرأ الأعداد حتى ١٠"],
+      "vocabulary": [
+        { "word": "العدّ", "icon": "👆", "hint": "نلمس كل شيء مرة واحدة ونقول العدد" },
+        { "word": "كم العدد؟", "icon": "❓", "hint": "آخر عدد نقوله هو عدد الأشياء" },
+        { "word": "الأعداد", "icon": "🔢", "hint": "واحد، اثنان، ثلاثة... حتى عشرة" },
+        { "word": "شريط الأعداد", "icon": "📏", "hint": "الأعداد مرتبة من ١ إلى ١٠" }
+      ],
+      "explorer": "counting",
+      "planner": {
+        "warmup": "أنشودة العدّ من ١ إلى ١٠ مع التصفيق، ثم عدّ تنازلي من ١٠",
+        "strategy": "التعلم باللعب – عدّ الأصداف والمحسوسات في مجموعات",
+        "resources": ["أصداف أو مكعبات", "بطاقات الأعداد ١–١٠", "شريط الأعداد"]
+      },
+      "practice": [
+        { "id": "1-1", "level": "easy", "type": "choice", "prompt": "كم عدد الفيلة؟", "visual": { "kind": "objects", "emoji": "🐘", "count": 2 }, "options": [1, 2, 3], "answer": 2, "hint": "المس كل فيل وقل العدد", "skill": "counting" },
+        { "id": "1-2", "level": "easy", "type": "choice", "prompt": "ما العدد المفقود في شريط الأعداد؟", "visual": { "kind": "track", "from": 1, "to": 10, "hide": [4] }, "options": [3, 4, 5], "answer": 4, "hint": "ما العدد الذي يأتي بعد ٣؟", "skill": "counting" },
+        { "id": "1-3", "level": "medium", "type": "number", "prompt": "كم عدد الفراشات؟", "visual": { "kind": "objects", "emoji": "🦋", "count": 7 }, "answer": 7, "hint": "عُدّ صفاً صفاً", "skill": "counting" },
+        { "id": "1-4", "level": "medium", "type": "choice", "prompt": "كم عدد الأصداف؟", "visual": { "kind": "objects", "emoji": "🐚", "count": 5, "scatter": true }, "options": [4, 5, 6], "answer": 5, "hint": "الأصداف مبعثرة، عُدّها بهدوء", "skill": "counting" },
+        { "id": "1-5", "level": "challenge", "type": "number", "prompt": "كم عدد الكرات؟", "visual": { "kind": "objects", "emoji": "⚽", "count": 10, "scatter": true }, "answer": 10, "hint": "ضع إصبعك على كل كرة", "skill": "counting" },
+        { "id": "1-6", "level": "challenge", "type": "order", "prompt": "رتّب الأعداد من الأصغر إلى الأكبر", "items": [3, 1, 4, 2, 5], "answer": [1, 2, 3, 4, 5], "hint": "ابدأ بالعدد واحد", "skill": "counting" }
+      ],
+      "exitTicket": {
+        "slot": null,
+        "items": [
+          { "id": "1-e1", "points": 1, "type": "choice", "prompt": "كم عدد القطط؟", "visual": { "kind": "objects", "emoji": "🐈", "count": 4 }, "options": [3, 4, 5], "answer": 4, "skill": "counting" },
+          { "id": "1-e2", "points": 2, "type": "number", "prompt": "كم عدد الطبول؟", "visual": { "kind": "objects", "emoji": "🥁", "count": 6, "scatter": true }, "answer": 6, "skill": "counting" },
+          { "id": "1-e3", "points": 2, "type": "order", "prompt": "رتّب الأعداد من الأصغر إلى الأكبر", "items": [7, 9, 8, 10, 6], "answer": [6, 7, 8, 9, 10], "skill": "counting" }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "unit": 1,
+      "strand": "١ أ",
+      "place": "الجبل الأخضر",
+      "icon": "🔟",
+      "title": "تكوين العدد ١٠، الأخذ من عشرة، الضعف",
+      "pages": [7, 9],
+      "bookTitles": ["تكوين العدد ١٠ (ص ٧)", "الأخذ من عشرة (ص ٨)", "الضعف (ص ٩)"],
+      "intro": "في إطار العشرة عشرة أماكن. هيا نملؤه بألوان مختلفة لنكوّن العدد عشرة، ونعرف كم بقي، ونجد الضعف.",
+      "objectives": [
+        { "code": "1Nc1", "text": "يعرف أزواج العدد ١٠ ويسجّل حقائق الجمع والطرح المرتبطة" },
+        { "code": "1Nc5", "text": "يعرف الضعف حتى ضعف العدد ٥" },
+        { "code": "1Nc9", "text": "يفهم الطرح بوصفه أخذاً ويسجّل جمل الطرح" }
+      ],
+      "mentalCodes": ["1Nc1", "1Nc5"],
+      "skills": ["makeTen", "doubles"],
+      "canDo": ["أستطيع أن أكوّن العدد ١٠ بعددين", "أستطيع أن أعرف كم بقي عندما آخذ من عشرة", "أستطيع أن أجد ضعف عدد صغير"],
+      "vocabulary": [
+        { "word": "إطار العشرة", "icon": "🔟", "hint": "صفّان في كل صف خمسة أماكن" },
+        { "word": "كم بقي؟", "icon": "➖", "hint": "نأخذ بعض الأقراص ونعدّ الباقي" },
+        { "word": "الضعف", "icon": "✌️", "hint": "العدد ومثله معاً: ضعف ٢ هو ٤" }
+      ],
+      "explorer": "tenframe",
+      "planner": {
+        "warmup": "لعبة الأصابع: أُظهر ٦ أصابع، كم ينقص لتكون ١٠؟ (1Nc1)",
+        "strategy": "فكّر – زاوج – شارك: كم طريقة لتكوين ١٠ بلونين؟",
+        "resources": ["إطار العشرة (٢×٥)", "أقراص حمراء وصفراء وزرقاء", "سيارات صغيرة للضعف"]
+      },
+      "practice": [
+        { "id": "2-1", "level": "easy", "type": "choice", "prompt": "كم قرصاً نحتاج لنكمل العشرة؟", "visual": { "kind": "tenframe", "red": 6 }, "options": [3, 4, 5], "answer": 4, "hint": "عُدّ الأماكن الفارغة", "skill": "makeTen" },
+        { "id": "2-2", "level": "easy", "type": "choice", "prompt": "كم قرصاً في إطار العشرة؟", "visual": { "kind": "tenframe", "red": 5, "yellow": 5 }, "options": [9, 10, 11], "answer": 10, "hint": "الإطار ممتلئ", "skill": "makeTen" },
+        { "id": "2-3", "level": "medium", "type": "number", "prompt": "معنا ١٠ أقراص، أخذنا ٣. كم بقي؟", "say": "معنا عشرة أقراص، أخذنا ثلاثة. كم بقي؟", "visual": { "kind": "tenframe", "red": 7, "removed": 3 }, "answer": 7, "hint": "عُدّ الأقراص الباقية في الإطار", "skill": "makeTen" },
+        { "id": "2-4", "level": "medium", "type": "choice", "prompt": "ضعف العدد ٣ هو؟", "visual": { "kind": "tenframe", "red": 3, "yellow": 3, "rows": true }, "options": [5, 6, 7], "answer": 6, "hint": "ثلاثة وثلاثة", "skill": "doubles" },
+        { "id": "2-5", "level": "challenge", "type": "number", "prompt": "أوجد العدد الثالث لتكوين ١٠:  ٣ + ٥ + ؟", "say": "ثلاثة زائد خمسة زائد كم يساوي عشرة؟", "visual": { "kind": "tenframe", "red": 3, "yellow": 5 }, "answer": 2, "hint": "عُدّ الأماكن الفارغة", "skill": "makeTen" },
+        { "id": "2-6", "level": "challenge", "type": "number", "prompt": "ضعف العدد ٥ هو؟", "say": "ضعف العدد خمسة هو؟", "answer": 10, "hint": "خمسة أصابع في يد وخمسة في الأخرى", "skill": "doubles" }
+      ],
+      "exitTicket": {
+        "slot": "sqK1",
+        "items": [
+          { "id": "2-e1", "points": 1, "type": "choice", "prompt": "كم بقي لتكوين العدد ١٠؟", "visual": { "kind": "tenframe", "red": 7 }, "options": [2, 3, 4], "answer": 3, "skill": "makeTen" },
+          { "id": "2-e2", "points": 2, "type": "number", "prompt": "ضعف العدد ٤ هو؟", "say": "ضعف العدد أربعة هو؟", "answer": 8, "skill": "doubles" },
+          { "id": "2-e3", "points": 2, "type": "number", "prompt": "معنا ١٠ أقراص، أخذنا ٦. كم بقي؟", "say": "معنا عشرة أقراص، أخذنا ستة. كم بقي؟", "answer": 4, "skill": "makeTen" }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "unit": 1,
+      "strand": "١ ج",
+      "place": "مسفاة العبريين",
+      "icon": "🦶",
+      "title": "بصمة قدم عملاقة والطول",
+      "pages": [10, 11],
+      "bookTitles": ["بصمة قدم عملاقة (ص ١٠)", "الطول (ص ١١)"],
+      "intro": "وجدنا بصمة قدم عملاقة! كيف نقيس طولها؟ نستخدم المكعبات أو الأقلام، ونقارن: أيهما أطول وأيهما أقصر.",
+      "objectives": [
+        { "code": "1Ml1", "text": "يقارن الأطوال مباشرة ثم بوحدات غير معيارية متماثلة" },
+        { "code": "1Ml2", "text": "يستخدم مفردات: أطول من، أقصر من، الأطول، الأقصر" }
+      ],
+      "mentalCodes": [],
+      "skills": ["length"],
+      "canDo": ["أستطيع أن أقيس الطول بالمكعبات", "أستطيع أن أقارن: أطول من وأقصر من", "أستطيع أن أرتب الأشياء من الأقصر إلى الأطول"],
+      "vocabulary": [
+        { "word": "أطول من", "icon": "📏", "hint": "القلم الأزرق أطول من القلم الأحمر" },
+        { "word": "أقصر من", "icon": "✏️", "hint": "الممحاة أقصر من المسطرة" },
+        { "word": "الأطول", "icon": "🦒", "hint": "أطول شيء في المجموعة" },
+        { "word": "الأقصر", "icon": "🐜", "hint": "أقصر شيء في المجموعة" }
+      ],
+      "explorer": "measure",
+      "planner": {
+        "warmup": "من الأطول؟ يقف تلميذان ظهراً لظهر وتصف الشعبة النتيجة",
+        "strategy": "التعلم التعاوني – رسم أقدام التلاميذ وقياسها بالمكعبات المتداخلة",
+        "resources": ["ورق كبير وأقلام تلوين", "مكعبات متداخلة", "أقلام رصاص بنفس الطول"]
+      },
+      "practice": [
+        { "id": "3-1", "level": "easy", "type": "choice", "prompt": "أيّهما أطول؟", "visual": { "kind": "lengths", "items": [{ "label": "القلم الأحمر", "len": 5, "color": "#dc2626" }, { "label": "القلم الأزرق", "len": 8, "color": "#2563eb" }] }, "options": ["القلم الأحمر", "القلم الأزرق"], "answer": "القلم الأزرق", "hint": "انظر أين ينتهي كل قلم", "skill": "length" },
+        { "id": "3-2", "level": "easy", "type": "choice", "prompt": "أيّهما أقصر؟", "visual": { "kind": "lengths", "items": [{ "label": "الشريط الأخضر", "len": 9, "color": "#16a34a" }, { "label": "الشريط البرتقالي", "len": 4, "color": "#ea580c" }] }, "options": ["الشريط الأخضر", "الشريط البرتقالي"], "answer": "الشريط البرتقالي", "skill": "length" },
+        { "id": "3-3", "level": "medium", "type": "number", "prompt": "كم مكعباً طول القدم؟", "visual": { "kind": "measure", "object": "🦶", "units": 5 }, "answer": 5, "hint": "عُدّ المكعبات تحت القدم", "skill": "length" },
+        { "id": "3-4", "level": "medium", "type": "choice", "prompt": "أيّها الأطول؟", "visual": { "kind": "lengths", "items": [{ "label": "أ", "len": 6, "color": "#d97706" }, { "label": "ب", "len": 9, "color": "#0f4c5c" }, { "label": "ج", "len": 3, "color": "#be185d" }] }, "options": ["أ", "ب", "ج"], "answer": "ب", "skill": "length" },
+        { "id": "3-5", "level": "challenge", "type": "order", "prompt": "رتّب الأطفال من الأقصر إلى الأطول", "items": ["سالم: ٨ مكعبات", "مريم: ٤ مكعبات", "محمد: ٦ مكعبات"], "answer": ["مريم: ٤ مكعبات", "محمد: ٦ مكعبات", "سالم: ٨ مكعبات"], "hint": "العدد الأصغر يعني الأقصر", "skill": "length" },
+        { "id": "3-6", "level": "challenge", "type": "number", "prompt": "قدم العملاق طولها ٩ أقلام، وقدمك طولها ٣ أقلام. كم قلماً تزيد قدم العملاق؟", "say": "قدم العملاق طولها تسعة أقلام، وقدمك طولها ثلاثة أقلام. كم قلماً تزيد قدم العملاق؟", "answer": 6, "hint": "عُدّ من ٣ إلى ٩", "skill": "length" }
+      ],
+      "exitTicket": {
+        "slot": null,
+        "items": [
+          { "id": "3-e1", "points": 1, "type": "choice", "prompt": "أيّهما أطول؟", "visual": { "kind": "lengths", "items": [{ "label": "المسطرة", "len": 9, "color": "#0f4c5c" }, { "label": "الممحاة", "len": 2, "color": "#db2777" }] }, "options": ["المسطرة", "الممحاة"], "answer": "المسطرة", "skill": "length" },
+          { "id": "3-e2", "points": 2, "type": "number", "prompt": "كم مكعباً طول الحذاء؟", "visual": { "kind": "measure", "object": "👟", "units": 7 }, "answer": 7, "skill": "length" },
+          { "id": "3-e3", "points": 2, "type": "choice", "prompt": "أيّها الأقصر؟", "visual": { "kind": "lengths", "items": [{ "label": "أ", "len": 7, "color": "#2563eb" }, { "label": "ب", "len": 3, "color": "#16a34a" }, { "label": "ج", "len": 5, "color": "#d97706" }] }, "options": ["أ", "ب", "ج"], "answer": "ب", "skill": "length" }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "unit": 1,
+      "strand": "١ أ",
+      "place": "قلعة نزوى",
+      "icon": "🤲",
+      "title": "أزواج الأعداد وأعداد أكثر من عشرة بقليل",
+      "pages": [12, 13],
+      "bookTitles": ["أزواج الأعداد (ص ١٢)", "أعداد أكثر من عشرة بقليل (ص ١٣)"],
+      "intro": "العددان خمسة وواحد زوجان مجموعهما ستة. هيا نكتشف أزواج الأعداد، ونرتب الأعداد من عشرة إلى عشرين.",
+      "objectives": [
+        { "code": "1Nc2", "text": "يبدأ في معرفة أزواج الأعداد ٦، ٧، ٨، ٩" },
+        { "code": "1Nn6", "text": "يبدأ في تجزئة الأعداد من ١٠ إلى ٢٠ إلى عشرة وآحاد" },
+        { "code": "1Nn9", "text": "يرتب الأعداد حتى ٢٠ على شريط الأعداد" }
+      ],
+      "mentalCodes": ["1Nc2"],
+      "skills": ["pairs", "teens"],
+      "canDo": ["أستطيع أن أجد أزواج الأعداد ٦ و٧ و٨ و٩", "أستطيع أن أرتب الأعداد من ١٠ إلى ٢٠", "أستطيع أن أعرف أن ١٣ هي عشرة وثلاثة آحاد"],
+      "vocabulary": [
+        { "word": "أزواج الأعداد", "icon": "🤝", "hint": "عددان مجموعهما عدد معيّن: ٥ و١ مجموعهما ٦" },
+        { "word": "المجموع", "icon": "➕", "hint": "ما نحصل عليه عندما نضم العددين" },
+        { "word": "الأعداد من ١٠ إلى ٢٠", "icon": "🔟", "hint": "عشرة وبعض الآحاد" }
+      ],
+      "explorer": "pairs",
+      "planner": {
+        "warmup": "أبراج المكعبات: أُكوّن برجاً من ٧ وأكسره إلى جزأين (1Nc2)",
+        "strategy": "الرؤوس المرقمة – كل مجموعة تكتشف أزواج عدد مختلف",
+        "resources": ["مكعبات متداخلة", "بطاقات الأعداد ١٠–٢٠", "شريط الأعداد"]
+      },
+      "practice": [
+        { "id": "4-1", "level": "easy", "type": "choice", "prompt": "ما مجموع زوج الأعداد؟", "visual": { "kind": "hands", "right": 4, "left": 2 }, "options": [5, 6, 7], "answer": 6, "hint": "عُدّ الأصابع المرفوعة في اليدين", "skill": "pairs" },
+        { "id": "4-2", "level": "easy", "type": "choice", "prompt": "البرجان ٥ و١ زوجان. ما مجموعهما؟", "say": "البرجان خمسة وواحد زوجان. ما مجموعهما؟", "visual": { "kind": "cubes", "towers": [{ "n": 5, "color": "#e11d48" }, { "n": 1, "color": "#e11d48" }] }, "options": [5, 6, 7], "answer": 6, "skill": "pairs" },
+        { "id": "4-3", "level": "medium", "type": "number", "prompt": "٣ + ☐ = ٧", "say": "ثلاثة زائد كم يساوي سبعة؟", "answer": 4, "hint": "ابدأ من ٣ وعُدّ حتى ٧", "skill": "pairs" },
+        { "id": "4-4", "level": "medium", "type": "choice", "prompt": "ما العدد المفقود؟", "visual": { "kind": "track", "from": 10, "to": 20, "hide": [14] }, "options": [13, 14, 15], "answer": 14, "skill": "teens" },
+        { "id": "4-5", "level": "challenge", "type": "order", "prompt": "رتّب الأعداد من الأصغر إلى الأكبر", "items": [17, 11, 19, 15, 13], "answer": [11, 13, 15, 17, 19], "hint": "استخدم شريط الأعداد للمساعدة", "skill": "teens" },
+        { "id": "4-6", "level": "challenge", "type": "choice", "prompt": "أيّ زوج مجموعه ٩؟", "say": "أي زوج مجموعه تسعة؟", "options": ["٤ و٥", "٣ و٥", "٦ و٢"], "answer": "٤ و٥", "skill": "pairs" }
+      ],
+      "exitTicket": {
+        "slot": null,
+        "items": [
+          { "id": "4-e1", "points": 1, "type": "choice", "prompt": "ما مجموع زوج الأعداد؟", "visual": { "kind": "hands", "right": 5, "left": 3 }, "options": [7, 8, 9], "answer": 8, "skill": "pairs" },
+          { "id": "4-e2", "points": 2, "type": "number", "prompt": "٦ + ☐ = ٩", "say": "ستة زائد كم يساوي تسعة؟", "answer": 3, "skill": "pairs" },
+          { "id": "4-e3", "points": 2, "type": "order", "prompt": "رتّب الأعداد من الأصغر إلى الأكبر", "items": [16, 12, 18, 14], "answer": [12, 14, 16, 18], "skill": "teens" }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "unit": 1,
+      "strand": "١ أ",
+      "place": "حصن جبرين",
+      "icon": "🫙",
+      "title": "التقدير والعدّ وضعف العدد",
+      "pages": [14, 15],
+      "bookTitles": ["التقدير والعدّ (ص ١٤)", "ضعف العدد (ص ١٥)"],
+      "intro": "كم مكعباً في الوعاء؟ خمّن أولاً، ثم عُدّ لتتحقق من تخمينك. وبعدها نجد ضعف العدد.",
+      "objectives": [
+        { "code": "1Nn11", "text": "يعطي تقديراً معقولاً لعدد أشياء حتى ٢٠ ثم يتحقق بالعدّ" },
+        { "code": "1Nc5", "text": "يعرف الضعف حتى ضعف ٥" },
+        { "code": "1Nc6", "text": "يجد شبه الضعف (٥ + ٦) مستخدماً الضعف المعروف" }
+      ],
+      "mentalCodes": ["1Nc5", "1Nc6"],
+      "skills": ["estimate", "doubles"],
+      "canDo": ["أستطيع أن أخمّن ثم أعدّ لأتحقق", "أستطيع أن أجد ضعف العدد", "أستطيع أن أستخدم لوحة ١–٣٠"],
+      "vocabulary": [
+        { "word": "خمّن", "icon": "🤔", "hint": "نقول عدداً قريباً دون أن نعدّ" },
+        { "word": "عُدّ", "icon": "👉", "hint": "نتحقق من التخمين بالعدّ" },
+        { "word": "ضعف العدد", "icon": "👐", "hint": "في اليدين ضعف ما في اليد الواحدة" }
+      ],
+      "explorer": "estimate",
+      "planner": {
+        "warmup": "خمّن كم قلماً في العلبة ثم نعدّ معاً على اللوحة ١–٣٠",
+        "strategy": "جدول التعلم KWL: ماذا أعرف عن التخمين؟ ماذا أريد أن أعرف؟ ماذا تعلمت؟",
+        "resources": ["وعاء شفاف ومكعبات", "لوحة الأعداد ١–٣٠", "قطع ملونة للضعف"]
+      },
+      "practice": [
+        { "id": "5-1", "level": "easy", "type": "choice", "prompt": "خمّن ثم عُدّ: كم مكعباً؟", "visual": { "kind": "objects", "emoji": "🧊", "count": 12, "scatter": true }, "options": [8, 12, 20], "answer": 12, "hint": "عُدّ لتتحقق من تخمينك", "skill": "estimate" },
+        { "id": "5-2", "level": "easy", "type": "choice", "prompt": "ما العدد المخفي؟", "visual": { "kind": "hundred", "from": 1, "to": 30, "hide": [23] }, "options": [22, 23, 24], "answer": 23, "skill": "estimate" },
+        { "id": "5-3", "level": "medium", "type": "number", "prompt": "في كل يد ٤ قطع. كم القطع في اليدين معاً؟", "say": "في كل يد أربع قطع. كم القطع في اليدين معاً؟", "visual": { "kind": "groups", "groups": [{ "emoji": "🟥", "count": 4 }, { "emoji": "🟥", "count": 4 }] }, "answer": 8, "hint": "ضعف ٤", "skill": "doubles" },
+        { "id": "5-4", "level": "medium", "type": "choice", "prompt": "ضعف العدد ٢ هو؟", "visual": { "kind": "groups", "groups": [{ "emoji": "🚗", "count": 2 }, { "emoji": "🚗", "count": 2 }] }, "options": [3, 4, 5], "answer": 4, "skill": "doubles" },
+        { "id": "5-5", "level": "challenge", "type": "number", "prompt": "٥ + ٦ = ؟  (فكّر: ضعف ٥ ثم أضف ١)", "say": "خمسة زائد ستة يساوي؟ فكّر: ضعف خمسة ثم أضف واحداً", "answer": 11, "hint": "ضعف ٥ = ١٠", "skill": "doubles" },
+        { "id": "5-6", "level": "challenge", "type": "choice", "prompt": "خمّن: في الوعاء نحو كم مكعباً؟", "visual": { "kind": "objects", "emoji": "🧊", "count": 25, "scatter": true }, "options": [5, 25, 50], "answer": 25, "hint": "هل هي قليلة جداً أم كثيرة جداً؟", "skill": "estimate" }
+      ],
+      "exitTicket": {
+        "slot": null,
+        "items": [
+          { "id": "5-e1", "points": 1, "type": "choice", "prompt": "ضعف العدد ٣ هو؟", "say": "ضعف العدد ثلاثة هو؟", "options": [5, 6, 7], "answer": 6, "skill": "doubles" },
+          { "id": "5-e2", "points": 2, "type": "number", "prompt": "عُدّ: كم نجمة؟", "visual": { "kind": "objects", "emoji": "⭐", "count": 15, "scatter": true }, "answer": 15, "skill": "estimate" },
+          { "id": "5-e3", "points": 2, "type": "number", "prompt": "٤ + ٥ = ؟", "say": "أربعة زائد خمسة يساوي؟", "answer": 9, "skill": "doubles" }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "unit": 1,
+      "strand": "١ ب",
+      "place": "قلعة بهلاء",
+      "icon": "🔺",
+      "title": "الأشكال والمجسمات والأنماط والتماثل",
+      "pages": [16, 20],
+      "bookTitles": ["ما الشكل؟ (ص ١٦)", "صناعة أربعة مربعات (ص ١٧)", "المجسمات (ص ١٨)", "ما التالي؟ (ص ١٩)", "التماثل والأنماط (ص ٢٠)"],
+      "intro": "ما الشكل الذي يخرج من الصندوق؟ هيا نتعرف الدائرة والمربع والمستطيل والمثلث، ونبني الأشكال بالعيدان، ونكتشف المجسمات والأنماط والتماثل.",
+      "objectives": [
+        { "code": "1Gs1", "text": "يسمّي الأشكال الثنائية الأبعاد ويصنّفها: دائرة، مربع، مستطيل، مثلث، خماسي، سداسي" },
+        { "code": "1Gs2", "text": "يسمّي المجسمات: المكعب، المنشور الرباعي، الكرة، المخروط، الهرم، المنشور الثلاثي" },
+        { "code": "1Gs4", "text": "يتعرّف التماثل البسيط ويكمل الأنماط" }
+      ],
+      "mentalCodes": [],
+      "skills": ["shapes", "patterns"],
+      "canDo": ["أستطيع أن أسمّي الدائرة والمربع والمستطيل والمثلث", "أستطيع أن أصنع مربعاً بأربعة عيدان", "أستطيع أن أسمّي المجسمات", "أستطيع أن أكمل النمط"],
+      "vocabulary": [
+        { "word": "الدائرة", "icon": "⚪", "hint": "شكل مستدير ليس له أضلاع" },
+        { "word": "المربع", "icon": "🟥", "hint": "أربعة أضلاع متساوية" },
+        { "word": "المستطيل", "icon": "▭", "hint": "أربعة أضلاع: ضلعان طويلان وضلعان قصيران" },
+        { "word": "المثلث", "icon": "🔺", "hint": "ثلاثة أضلاع" },
+        { "word": "خماسي وسداسي", "icon": "⬡", "hint": "الخماسي له ٥ أضلاع والسداسي له ٦" },
+        { "word": "المجسمات", "icon": "🧊", "hint": "المكعب، الكرة، المخروط، الهرم، المنشور" },
+        { "word": "النمط", "icon": "🔁", "hint": "تكرار منتظم: دائرة، مربع، دائرة، مربع..." },
+        { "word": "التماثل", "icon": "🦋", "hint": "نصفان متطابقان كجناحي الفراشة" }
+      ],
+      "explorer": "shapes",
+      "planner": {
+        "warmup": "صندوق الأشكال الغامض: ما الشكل الذي يظهر جزء منه؟",
+        "strategy": "القبعات الست: القبعة البيضاء (ماذا نرى؟) والخضراء (أشكال جديدة نبنيها بالعيدان)",
+        "resources": ["عيدان خشبية", "حجر نرد", "مجسمات (مكعب، كرة، مخروط، هرم، منشور)", "مرآة صغيرة للتماثل"]
+      },
+      "practice": [
+        { "id": "6-1", "level": "easy", "type": "choice", "prompt": "ما اسم هذا الشكل؟", "visual": { "kind": "shapes", "items": ["triangle"] }, "options": ["مثلث", "مربع", "دائرة"], "answer": "مثلث", "skill": "shapes" },
+        { "id": "6-2", "level": "easy", "type": "choice", "prompt": "كم عوداً نحتاج لصنع مربع؟", "visual": { "kind": "shapes", "items": ["square"] }, "options": [3, 4, 5], "answer": 4, "hint": "عُدّ أضلاع المربع", "skill": "shapes" },
+        { "id": "6-3", "level": "medium", "type": "choice", "prompt": "ما اسم هذا المجسم؟", "visual": { "kind": "solids", "items": ["sphere"] }, "options": ["كرة", "مكعب", "مخروط"], "answer": "كرة", "skill": "shapes" },
+        { "id": "6-4", "level": "medium", "type": "choice", "prompt": "ما التالي في النمط؟", "visual": { "kind": "pattern", "seq": ["circle:#db2777", "square:#f59e0b", "circle:#db2777", "square:#f59e0b", "circle:#db2777"] }, "options": ["مربع", "دائرة", "مثلث"], "answer": "مربع", "skill": "patterns" },
+        { "id": "6-5", "level": "challenge", "type": "number", "prompt": "كم عوداً نحتاج لصنع شكل سداسي؟", "visual": { "kind": "shapes", "items": ["hexagon"] }, "answer": 6, "skill": "shapes" },
+        { "id": "6-6", "level": "challenge", "type": "number", "prompt": "كم مثلثاً في الصورة؟", "visual": { "kind": "shapes", "items": ["triangle", "circle", "triangle", "square", "rectangle", "triangle", "circle"] }, "answer": 3, "skill": "shapes" }
+      ],
+      "exitTicket": {
+        "slot": null,
+        "items": [
+          { "id": "6-e1", "points": 1, "type": "choice", "prompt": "ما اسم هذا الشكل؟", "visual": { "kind": "shapes", "items": ["square"] }, "options": ["مستطيل", "مربع", "مثلث"], "answer": "مربع", "skill": "shapes" },
+          { "id": "6-e2", "points": 2, "type": "choice", "prompt": "ما التالي في النمط؟", "visual": { "kind": "pattern", "seq": ["triangle:#facc15", "square:#16a34a", "triangle:#facc15", "square:#16a34a", "triangle:#facc15"] }, "options": ["مثلث", "مربع", "دائرة"], "answer": "مربع", "skill": "patterns" },
+          { "id": "6-e3", "points": 2, "type": "choice", "prompt": "ما اسم هذا المجسم؟", "visual": { "kind": "solids", "items": ["cube"] }, "options": ["مكعب", "هرم", "كرة"], "answer": "مكعب", "skill": "shapes" }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "unit": 1,
+      "strand": "١ أ",
+      "place": "سوق مطرح",
+      "icon": "🧩",
+      "title": "التركيب وأزواج العدد ٧ ولوحة المائة",
+      "pages": [21, 22],
+      "bookTitles": ["التركيب (ص ٢١)", "لوحة المائة (ص ٢٢)"],
+      "intro": "ما التركيبة المفقودة من أزواج العدد سبعة؟ ثم نكتشف الأنماط في لوحة المائة.",
+      "objectives": [
+        { "code": "1Nc2", "text": "يعرف أزواج العدد ٧" },
+        { "code": "1Nc7", "text": "يبدأ في التعرّف على مضاعفات ٢ و١٠" },
+        { "code": "1Nn4", "text": "يعدّ بالعشرات في لوحة المائة" }
+      ],
+      "mentalCodes": ["1Nc2", "1Nc7"],
+      "skills": ["pairs7", "hundred"],
+      "canDo": ["أستطيع أن أجد جميع أزواج العدد ٧", "أستطيع أن أكتشف الأنماط في لوحة المائة", "أستطيع أن أعدّ بالعشرات"],
+      "vocabulary": [
+        { "word": "أزواج العدد ٧", "icon": "🧩", "hint": "٠+٧، ١+٦، ٢+٥، ٣+٤" },
+        { "word": "لوحة المائة", "icon": "💯", "hint": "الأعداد من ١ إلى ١٠٠ في عشرة صفوف" },
+        { "word": "نمط", "icon": "🔁", "hint": "الأعداد ١٠، ٢٠، ٣٠ في عمود واحد" }
+      ],
+      "explorer": "puzzle7",
+      "planner": {
+        "warmup": "العدّ بالعشرات من ٠ إلى ١٠٠ مع التصفيق (1Nc7)",
+        "strategy": "التعلم باللعب – قطع البازل المتطابقة لأزواج ٧",
+        "resources": ["بطاقات بازل لأزواج ٧", "لوحة المائة", "أقلام تظليل"]
+      },
+      "practice": [
+        { "id": "7-1", "level": "easy", "type": "choice", "prompt": "٧ = ٥ + ؟", "say": "سبعة تساوي خمسة زائد كم؟", "visual": { "kind": "puzzle", "a": 5, "total": 7 }, "options": [1, 2, 3], "answer": 2, "skill": "pairs7" },
+        { "id": "7-2", "level": "easy", "type": "choice", "prompt": "٧ = ٣ + ؟", "say": "سبعة تساوي ثلاثة زائد كم؟", "visual": { "kind": "puzzle", "a": 3, "total": 7 }, "options": [3, 4, 5], "answer": 4, "skill": "pairs7" },
+        { "id": "7-3", "level": "medium", "type": "choice", "prompt": "ما العدد التالي في النمط الملوّن؟", "visual": { "kind": "hundred", "from": 1, "to": 100, "highlight": [10, 20, 30, 40] }, "options": [41, 50, 60], "answer": 50, "skill": "hundred" },
+        { "id": "7-4", "level": "medium", "type": "number", "prompt": "ما العدد المخفي في لوحة المائة؟", "visual": { "kind": "hundred", "from": 1, "to": 100, "hide": [45] }, "answer": 45, "skill": "hundred" },
+        { "id": "7-5", "level": "challenge", "type": "choice", "prompt": "أيّ زوج مجموعه ٧؟", "say": "أي زوج مجموعه سبعة؟", "options": ["٦ و١", "٤ و٢", "٥ و٣"], "answer": "٦ و١", "skill": "pairs7" },
+        { "id": "7-6", "level": "challenge", "type": "number", "prompt": "أكمل النمط: ١٢، ٢٢، ٣٢، ؟", "say": "أكمل النمط: اثنا عشر، اثنان وعشرون، اثنان وثلاثون، ثم؟", "answer": 42, "hint": "نضيف عشرة في كل مرة", "skill": "hundred" }
+      ],
+      "exitTicket": {
+        "slot": "sqK2",
+        "items": [
+          { "id": "7-e1", "points": 1, "type": "choice", "prompt": "٧ = ٦ + ؟", "say": "سبعة تساوي ستة زائد كم؟", "options": [1, 2, 3], "answer": 1, "skill": "pairs7" },
+          { "id": "7-e2", "points": 2, "type": "number", "prompt": "ما العدد المخفي؟", "visual": { "kind": "hundred", "from": 1, "to": 100, "hide": [37] }, "answer": 37, "skill": "hundred" },
+          { "id": "7-e3", "points": 2, "type": "number", "prompt": "أكمل: ٣٠، ٤٠، ٥٠، ؟", "say": "أكمل: ثلاثون، أربعون، خمسون، ثم؟", "answer": 60, "skill": "hundred" }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "unit": 1,
+      "strand": "١ ج",
+      "place": "كورنيش مطرح",
+      "icon": "🪣",
+      "title": "السعة وترتيب السعات",
+      "pages": [23, 24],
+      "bookTitles": ["السعة (ص ٢٣)", "ترتيب السعات (ص ٢٤)"],
+      "intro": "انظر إلى الأوعية: البرطمان، دلو الطلاء، وعاء التمر. أيّها يتسع للكمية الأكثر؟ وأيّها يتسع للكمية الأقل؟",
+      "objectives": [
+        { "code": "1Ml3", "text": "يقدّر السعة ويقيسها بوحدات غير معيارية متماثلة" },
+        { "code": "1Ml4", "text": "يرتب الأوعية حسب سعتها: تتسع للكمية الأكثر/الأقل" }
+      ],
+      "mentalCodes": [],
+      "skills": ["capacity"],
+      "canDo": ["أستطيع أن أعرف الوعاء الذي يتسع للكمية الأكثر", "أستطيع أن أرتب الأوعية حسب سعتها", "أستطيع أن أقيس السعة بالأكواب"],
+      "vocabulary": [
+        { "word": "السعة", "icon": "🫙", "hint": "كم يتسع الوعاء من ماء أو رمل" },
+        { "word": "تتسع للكمية الأكثر", "icon": "🪣", "hint": "الوعاء الكبير يتسع للكمية الأكثر" },
+        { "word": "تتسع للكمية الأقل", "icon": "🥛", "hint": "الكوب الصغير يتسع للكمية الأقل" }
+      ],
+      "explorer": "capacity",
+      "planner": {
+        "warmup": "تحدّي الأكواب: كم كوباً يملأ الإبريق؟ نخمّن ثم نجرّب",
+        "strategy": "المحطات العلمية – ركن الماء والرمل وترتيب الأوعية",
+        "resources": ["أوعية مختلفة الأحجام", "أكواب متماثلة", "ماء أو رمل أو أرز"]
+      },
+      "practice": [
+        { "id": "8-1", "level": "easy", "type": "choice", "prompt": "أيّ وعاء يتسع للكمية الأكثر؟", "visual": { "kind": "containers", "items": [{ "label": "الكوب", "h": 40, "w": 34, "color": "#38bdf8" }, { "label": "الدلو", "h": 90, "w": 80, "color": "#f97316" }] }, "options": ["الكوب", "الدلو"], "answer": "الدلو", "skill": "capacity" },
+        { "id": "8-2", "level": "easy", "type": "choice", "prompt": "أيّ وعاء يتسع للكمية الأقل؟", "visual": { "kind": "containers", "items": [{ "label": "البرطمان", "h": 80, "w": 60, "color": "#f59e0b" }, { "label": "الفنجان", "h": 30, "w": 36, "color": "#a855f7" }] }, "options": ["البرطمان", "الفنجان"], "answer": "الفنجان", "skill": "capacity" },
+        { "id": "8-3", "level": "medium", "type": "number", "prompt": "ملأنا الإبريق بهذه الأكواب. كم كوباً يتسع الإبريق؟", "visual": { "kind": "objects", "emoji": "🥛", "count": 4 }, "answer": 4, "skill": "capacity" },
+        { "id": "8-4", "level": "medium", "type": "choice", "prompt": "أيّها يتسع للكمية الأكثر؟", "visual": { "kind": "containers", "items": [{ "label": "أ", "h": 60, "w": 40, "color": "#22c55e" }, { "label": "ب", "h": 95, "w": 55, "color": "#ec4899" }, { "label": "ج", "h": 45, "w": 50, "color": "#eab308" }] }, "options": ["أ", "ب", "ج"], "answer": "ب", "skill": "capacity" },
+        { "id": "8-5", "level": "challenge", "type": "order", "prompt": "رتّب الأوعية من الأقل سعة إلى الأكثر", "items": ["الدلو", "الكوب", "الإبريق"], "answer": ["الكوب", "الإبريق", "الدلو"], "skill": "capacity" },
+        { "id": "8-6", "level": "challenge", "type": "choice", "prompt": "الدلو يتسع لـ ٨ أكواب، ووعاء التمر يتسع لـ ٥ أكواب. أيّهما يتسع أكثر؟", "say": "الدلو يتسع لثمانية أكواب، ووعاء التمر يتسع لخمسة أكواب. أيهما يتسع أكثر؟", "options": ["الدلو", "وعاء التمر"], "answer": "الدلو", "skill": "capacity" }
+      ],
+      "exitTicket": {
+        "slot": null,
+        "items": [
+          { "id": "8-e1", "points": 1, "type": "choice", "prompt": "أيّهما يتسع للكمية الأكثر؟", "visual": { "kind": "containers", "items": [{ "label": "الحوض", "h": 70, "w": 110, "color": "#0ea5e9" }, { "label": "الكأس", "h": 45, "w": 30, "color": "#f43f5e" }] }, "options": ["الحوض", "الكأس"], "answer": "الحوض", "skill": "capacity" },
+          { "id": "8-e2", "points": 2, "type": "choice", "prompt": "أيّها يتسع للكمية الأقل؟", "visual": { "kind": "containers", "items": [{ "label": "أ", "h": 80, "w": 60, "color": "#8b5cf6" }, { "label": "ب", "h": 50, "w": 45, "color": "#14b8a6" }, { "label": "ج", "h": 30, "w": 28, "color": "#f97316" }] }, "options": ["أ", "ب", "ج"], "answer": "ج", "skill": "capacity" },
+          { "id": "8-e3", "points": 2, "type": "order", "prompt": "رتّب من الأقل سعة إلى الأكثر", "items": ["البرطمان", "الفنجان", "دلو الطلاء"], "answer": ["الفنجان", "البرطمان", "دلو الطلاء"], "skill": "capacity" }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "unit": 1,
+      "strand": "١ ج",
+      "place": "قلعة مطرح",
+      "icon": "🍽️",
+      "title": "مطعم المدرسة، ما الثمن؟، والوقت بالساعة الكاملة",
+      "pages": [25, 28],
+      "bookTitles": ["مطعم المدرسة (ص ٢٥)", "ما الثمن؟ (ص ٢٦)", "الأوقات في مطعم المدرسة (ص ٢٧)", "أوقات عمل مطعم المدرسة (ص ٢٨)"],
+      "intro": "مرحباً بك في مطعم المدرسة! يفتح المطعم عند الساعة التاسعة. هيا نحسب ثمن الوجبات، ونقرأ الساعة.",
+      "objectives": [
+        { "code": "1Mt1", "text": "يقرأ الوقت بالساعة الكاملة" },
+        { "code": "1Mm1", "text": "يجمع أثمان أشياء بسيطة ويستخدم النقود العمانية" },
+        { "code": "1Nc3", "text": "يجمع أكثر من عددين صغيرين" }
+      ],
+      "mentalCodes": ["1Nc3"],
+      "skills": ["time", "money"],
+      "canDo": ["أستطيع أن أقرأ الساعة الكاملة", "أستطيع أن أحسب ثمن وجبة", "أستطيع أن أصمم قائمة طعام"],
+      "vocabulary": [
+        { "word": "المقصف", "icon": "🏪", "hint": "مطعم المدرسة الذي نشتري منه الطعام" },
+        { "word": "الثمن", "icon": "💰", "hint": "كم ندفع لنشتري الشيء" },
+        { "word": "الساعة الكاملة", "icon": "🕘", "hint": "العقرب الطويل عند ١٢ والقصير يشير إلى الساعة" }
+      ],
+      "explorer": "canteen",
+      "planner": {
+        "warmup": "متى نستيقظ؟ متى نصل المدرسة؟ قراءة ساعات كاملة على ساعة الفصل",
+        "strategy": "لعب الأدوار – بائع ومشترٍ في مقصف المدرسة (مشروع: مطعم المدرسة)",
+        "resources": ["ساعة عقارب كبيرة", "بطاقات أسعار", "أوراق نقدية تعليمية", "أشكال هندسية لقائمة الطعام"]
+      },
+      "practice": [
+        { "id": "9-1", "level": "easy", "type": "choice", "prompt": "يفتح المطعم في هذا الوقت. ما الساعة؟", "visual": { "kind": "clock", "hour": 9 }, "options": ["الساعة التاسعة", "الساعة العاشرة", "الساعة الواحدة"], "answer": "الساعة التاسعة", "skill": "time" },
+        { "id": "9-2", "level": "easy", "type": "choice", "prompt": "ما ثمن الكعكة والماء معاً؟", "visual": { "kind": "prices", "items": [{ "emoji": "🍰", "label": "كعكة", "price": 3 }, { "emoji": "💧", "label": "ماء", "price": 1 }] }, "options": [3, 4, 5], "answer": 4, "skill": "money" },
+        { "id": "9-3", "level": "medium", "type": "choice", "prompt": "يُقدَّم الشاي في هذا الوقت. ما الساعة؟", "visual": { "kind": "clock", "hour": 1 }, "options": ["الساعة الواحدة", "الساعة الثانية عشرة", "الساعة الثانية"], "answer": "الساعة الواحدة", "skill": "time" },
+        { "id": "9-4", "level": "medium", "type": "number", "prompt": "ما ثمن هذه الوجبة؟", "visual": { "kind": "prices", "items": [{ "emoji": "🍰", "label": "كعكة", "price": 3 }, { "emoji": "☕", "label": "شاي", "price": 2 }, { "emoji": "🥣", "label": "شوربة", "price": 4 }] }, "answer": 9, "hint": "اجمع: ٣ + ٢ + ٤", "skill": "money" },
+        { "id": "9-5", "level": "challenge", "type": "choice", "prompt": "يفتح المطعم الساعة ٩، ويقدّم الفطور بعد ساعة واحدة. متى يقدّم الفطور؟", "say": "يفتح المطعم الساعة التاسعة، ويقدّم الفطور بعد ساعة واحدة. متى يقدّم الفطور؟", "options": ["الساعة الثامنة", "الساعة العاشرة", "الساعة الحادية عشرة"], "answer": "الساعة العاشرة", "skill": "time" },
+        { "id": "9-6", "level": "challenge", "type": "number", "prompt": "ما ثمن الوجبة كلها؟", "visual": { "kind": "prices", "items": [{ "emoji": "🍰", "label": "كعكة", "price": 3 }, { "emoji": "💧", "label": "ماء", "price": 1 }, { "emoji": "🥔", "label": "رقائق", "price": 2 }, { "emoji": "🌴", "label": "تمر", "price": 1 }] }, "answer": 7, "skill": "money" }
+      ],
+      "exitTicket": {
+        "slot": "sqPS1",
+        "items": [
+          { "id": "9-e1", "points": 1, "type": "choice", "prompt": "يتوقف تقديم الفطور في هذا الوقت. ما الساعة؟", "visual": { "kind": "clock", "hour": 11 }, "options": ["الساعة العاشرة", "الساعة الحادية عشرة", "الساعة الواحدة"], "answer": "الساعة الحادية عشرة", "skill": "time" },
+          { "id": "9-e2", "points": 2, "type": "number", "prompt": "ما ثمن الوجبة؟", "visual": { "kind": "prices", "items": [{ "emoji": "☕", "label": "شاي", "price": 2 }, { "emoji": "🌴", "label": "تمر", "price": 1 }, { "emoji": "🍰", "label": "كعكة", "price": 3 }] }, "answer": 6, "skill": "money" },
+          { "id": "9-e3", "points": 2, "type": "number", "prompt": "معك ١٠ ريالات، واشتريت شوربة بـ ٤ ريالات. كم ريالاً بقي معك؟", "say": "معك عشرة ريالات، واشتريت شوربة بأربعة ريالات. كم ريالاً بقي معك؟", "answer": 6, "skill": "money" }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "unit": 1,
+      "strand": "١ ج",
+      "place": "ميناء السلطان قابوس",
+      "icon": "⚖️",
+      "title": "الأخف والأثقل والميزان ذو الكفتين",
+      "pages": [29, 31],
+      "bookTitles": ["الأخف والأثقل (ص ٢٩)", "أخف من، وأثقل من (ص ٣٠)", "الميزان ذو الكفتين (ص ٣١)"],
+      "intro": "ضع الأشياء في كفتي الميزان. الكفة التي تنزل إلى الأسفل فيها الشيء الأثقل، والتي ترتفع فيها الشيء الأخف.",
+      "objectives": [
+        { "code": "1Ml1", "text": "يقارن الكتل مباشرة باستخدام الميزان ذي الكفتين" },
+        { "code": "1Ml5", "text": "يستخدم مفردات: أخف من، أثقل من، الأخف، الأثقل" }
+      ],
+      "mentalCodes": [],
+      "skills": ["weight"],
+      "canDo": ["أستطيع أن أستخدم الميزان ذا الكفتين", "أستطيع أن أعرف الأخف والأثقل", "أستطيع أن أرتب الأشياء من الأخف إلى الأثقل"],
+      "vocabulary": [
+        { "word": "أخف", "icon": "🪶", "hint": "الكفة ترتفع إلى أعلى" },
+        { "word": "أثقل", "icon": "🪨", "hint": "الكفة تنزل إلى أسفل" },
+        { "word": "الميزان ذو الكفتين", "icon": "⚖️", "hint": "نقارن به بين شيئين" }
+      ],
+      "explorer": "balance",
+      "planner": {
+        "warmup": "احمل بيديك: كتاباً وريشة. أيهما أثقل؟ صف ما تشعر به",
+        "strategy": "الاستقصاء الموجّه – توقّع ثم تحقّق بالميزان",
+        "resources": ["ميزان ذو كفتين", "تفاحة، ريشة، كتاب، بالون، زجاجة ماء", "مكعبات كوحدات وزن"]
+      },
+      "practice": [
+        { "id": "10-1", "level": "easy", "type": "choice", "prompt": "أيّهما أثقل؟", "visual": { "kind": "balance", "left": "🍎", "right": "🪶", "heavier": "left" }, "options": ["🍎 التفاحة", "🪶 الريشة"], "answer": "🍎 التفاحة", "skill": "weight" },
+        { "id": "10-2", "level": "easy", "type": "choice", "prompt": "أيّهما أخف؟", "visual": { "kind": "balance", "left": "📕", "right": "🎈", "heavier": "left" }, "options": ["📕 الكتاب", "🎈 البالون"], "answer": "🎈 البالون", "skill": "weight" },
+        { "id": "10-3", "level": "medium", "type": "choice", "prompt": "الكفة التي تنزل إلى الأسفل فيها الشيء...", "visual": { "kind": "balance", "left": "🧸", "right": "🍬", "heavier": "left" }, "options": ["الأثقل", "الأخف"], "answer": "الأثقل", "skill": "weight" },
+        { "id": "10-4", "level": "medium", "type": "choice", "prompt": "ما الشيء الأثقل من التفاحة؟", "options": ["🐘 الفيل", "🎈 البالون", "🪶 الريشة"], "answer": "🐘 الفيل", "skill": "weight" },
+        { "id": "10-5", "level": "challenge", "type": "number", "prompt": "الميزان متوازن. الدبدوب يزن كم مكعباً؟", "visual": { "kind": "balance", "left": "🧸", "right": "🧊", "rightCount": 5, "heavier": "equal" }, "answer": 5, "skill": "weight" },
+        { "id": "10-6", "level": "challenge", "type": "order", "prompt": "رتّب من الأخف إلى الأثقل", "items": ["📕 كتاب", "🪶 ريشة", "🍎 تفاحة"], "answer": ["🪶 ريشة", "🍎 تفاحة", "📕 كتاب"], "skill": "weight" }
+      ],
+      "exitTicket": {
+        "slot": null,
+        "items": [
+          { "id": "10-e1", "points": 1, "type": "choice", "prompt": "أيّهما أثقل؟", "visual": { "kind": "balance", "left": "🎈", "right": "🧴", "heavier": "right" }, "options": ["🎈 البالون", "🧴 زجاجة الماء"], "answer": "🧴 زجاجة الماء", "skill": "weight" },
+          { "id": "10-e2", "points": 2, "type": "choice", "prompt": "ما الشيء الأخف من التفاحة؟", "options": ["🚗 السيارة", "🪶 الريشة", "🌳 الشجرة"], "answer": "🪶 الريشة", "skill": "weight" },
+          { "id": "10-e3", "points": 2, "type": "number", "prompt": "الميزان متوازن. التفاحة تزن كم مكعباً؟", "visual": { "kind": "balance", "left": "🍎", "right": "🧊", "rightCount": 3, "heavier": "equal" }, "answer": 3, "skill": "weight" }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "unit": 2,
+      "strand": "٢ أ",
+      "place": "رمال الشرقية",
+      "icon": "🧦",
+      "title": "الأعداد الزوجية والفردية – زوجي أم فردي؟",
+      "pages": [32, 34],
+      "bookTitles": ["الأعداد الزوجية (ص ٣٢)", "الأعداد الفردية (ص ٣٣)", "زوجي أم فردي؟ (ص ٣٤)"],
+      "intro": "العينان زوج، والقفازان زوج. إذا استطعنا أن نضع الأشياء أزواجاً بلا باقٍ فالعدد زوجي، وإذا بقي شيء وحده فالعدد فردي.",
+      "objectives": [
+        { "code": "1Nn5", "text": "يعدّ بالقفز اثنين ويتعرّف الأعداد الزوجية والفردية حتى ٢٠" },
+        { "code": "1Nc7", "text": "يبدأ في التعرّف على مضاعفات العدد ٢" }
+      ],
+      "mentalCodes": ["1Nc7"],
+      "skills": ["oddEven"],
+      "canDo": ["أستطيع أن أعرف العدد الزوجي", "أستطيع أن أعرف العدد الفردي", "أستطيع أن أعدّ بالقفز اثنين"],
+      "vocabulary": [
+        { "word": "زوج", "icon": "👀", "hint": "شيئان متشابهان معاً: عينان، قفازان" },
+        { "word": "زوجي", "icon": "🧤", "hint": "٢، ٤، ٦، ٨، ١٠ – كل شيء له زوج" },
+        { "word": "فردي", "icon": "☝️", "hint": "١، ٣، ٥، ٧، ٩ – يبقى واحد وحده" },
+        { "word": "جورب", "icon": "🧦", "hint": "نلبس الجوربين زوجاً" },
+        { "word": "قفاز", "icon": "🧤", "hint": "نلبس القفازين في اليدين" }
+      ],
+      "explorer": "oddeven",
+      "planner": {
+        "warmup": "العدّ بالقفز اثنين مع القفز في المكان: ٢، ٤، ٦... (1Nc7)",
+        "strategy": "التعلم باللعب – مطابقة الجوارب والقفازات في أزواج",
+        "resources": ["جوارب وقفازات حقيقية أو مصوّرة", "مكعبات لبناء أبراج زوجية وفردية"]
+      },
+      "practice": [
+        { "id": "11-1", "level": "easy", "type": "choice", "prompt": "هل العدد زوجي أم فردي؟", "visual": { "kind": "pairs", "emoji": "🧦", "count": 6 }, "options": ["زوجي", "فردي"], "answer": "زوجي", "hint": "هل لكل جورب زوج؟", "skill": "oddEven" },
+        { "id": "11-2", "level": "easy", "type": "choice", "prompt": "هل العدد زوجي أم فردي؟", "visual": { "kind": "pairs", "emoji": "🧤", "count": 5 }, "options": ["زوجي", "فردي"], "answer": "فردي", "hint": "هل بقي قفاز وحده؟", "skill": "oddEven" },
+        { "id": "11-3", "level": "medium", "type": "choice", "prompt": "هل العدد ٧ زوجي أم فردي؟", "say": "هل العدد سبعة زوجي أم فردي؟", "options": ["زوجي", "فردي"], "answer": "فردي", "skill": "oddEven" },
+        { "id": "11-4", "level": "medium", "type": "choice", "prompt": "أيّ عدد زوجي؟", "options": [3, 6, 9], "answer": 6, "skill": "oddEven" },
+        { "id": "11-5", "level": "challenge", "type": "choice", "prompt": "في الصورة ٤ جوارب و٣ قفازات. هل مجموعها زوجي أم فردي؟", "say": "في الصورة أربعة جوارب وثلاثة قفازات. هل مجموعها زوجي أم فردي؟", "visual": { "kind": "groups", "groups": [{ "emoji": "🧦", "count": 4 }, { "emoji": "🧤", "count": 3 }] }, "options": ["زوجي", "فردي"], "answer": "فردي", "skill": "oddEven" },
+        { "id": "11-6", "level": "challenge", "type": "number", "prompt": "عُدّ بالقفز اثنين: ٢، ٤، ٦، ؟", "say": "عُدّ بالقفز اثنين: اثنان، أربعة، ستة، ثم؟", "answer": 8, "skill": "oddEven" }
+      ],
+      "exitTicket": {
+        "slot": "sqK3",
+        "items": [
+          { "id": "11-e1", "points": 1, "type": "choice", "prompt": "هل العدد زوجي أم فردي؟", "visual": { "kind": "pairs", "emoji": "🧦", "count": 4 }, "options": ["زوجي", "فردي"], "answer": "زوجي", "skill": "oddEven" },
+          { "id": "11-e2", "points": 2, "type": "choice", "prompt": "أيّ عدد فردي؟", "options": [8, 5, 10], "answer": 5, "skill": "oddEven" },
+          { "id": "11-e3", "points": 2, "type": "number", "prompt": "أكمل: ٢، ٤، ٦، ٨، ؟", "say": "أكمل: اثنان، أربعة، ستة، ثمانية، ثم؟", "answer": 10, "skill": "oddEven" }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "unit": 2,
+      "strand": "٢ أ",
+      "place": "وادي بني خالد",
+      "icon": "📿",
+      "title": "الأعداد بالترتيب (خيوط الكرات) و«بين»",
+      "pages": [35, 36],
+      "bookTitles": ["الأعداد بالترتيب (ص ٣٥)", "بين (ص ٣٦)"],
+      "intro": "في كل خيط كرات ملونة بنمط. ماذا سيكون لون الكرة السابعة؟ ثم نكتشف الأعداد التي تقع بين عددين.",
+      "objectives": [
+        { "code": "1Nn9", "text": "يستخدم الأعداد الترتيبية (الأول، الثاني...)" },
+        { "code": "1Nn8", "text": "يقارن عددين ويعطي عدداً يقع بينهما" }
+      ],
+      "mentalCodes": [],
+      "skills": ["ordinal"],
+      "canDo": ["أستطيع أن أتوقع لون الكرة في الترتيب", "أستطيع أن أجد الأعداد التي تقع بين عددين", "أستطيع أن أستخدم: الأول، الثاني، الثالث"],
+      "vocabulary": [
+        { "word": "العدد الترتيبي", "icon": "🥇", "hint": "الأول، الثاني، الثالث، السابع، العاشر" },
+        { "word": "بين", "icon": "↔️", "hint": "العدد ٦ يقع بين ٥ و٧" },
+        { "word": "خيط الكرات", "icon": "📿", "hint": "كرات ملونة مرتبة بنمط" }
+      ],
+      "explorer": "beads",
+      "planner": {
+        "warmup": "من يقف ثالثاً في الطابور؟ من يقف بين سالم ومريم؟",
+        "strategy": "التعلم باللعب – أحجار النرد لتحديد الأعداد الواقعة بين عددين",
+        "resources": ["خيوط وخرز ملون", "أحجار نرد", "ورق وقلم رصاص"]
+      },
+      "practice": [
+        { "id": "12-1", "level": "easy", "type": "choice", "prompt": "ما لون الكرة السابعة؟", "visual": { "kind": "beads", "pattern": ["yellow", "green"], "length": 10, "show": 6, "mark": 7 }, "options": ["أصفر", "أخضر"], "answer": "أصفر", "hint": "أصفر، أخضر، أصفر، أخضر...", "skill": "ordinal" },
+        { "id": "12-2", "level": "easy", "type": "choice", "prompt": "ما العدد بين ٥ و٧؟", "say": "ما العدد بين خمسة وسبعة؟", "visual": { "kind": "track", "from": 1, "to": 10, "hide": [6] }, "options": [4, 6, 8], "answer": 6, "skill": "ordinal" },
+        { "id": "12-3", "level": "medium", "type": "choice", "prompt": "ما لون الكرة العاشرة؟", "visual": { "kind": "beads", "pattern": ["blue", "green", "white"], "length": 12, "show": 6, "mark": 10 }, "options": ["أزرق", "أخضر", "أبيض"], "answer": "أزرق", "skill": "ordinal" },
+        { "id": "12-4", "level": "medium", "type": "choice", "prompt": "ما الأعداد التي تقع بين ١٣ و١٦؟", "say": "ما الأعداد التي تقع بين ثلاثة عشر وستة عشر؟", "options": ["١٤ و١٥", "١٣ و١٤", "١٥ و١٦"], "answer": "١٤ و١٥", "skill": "ordinal" },
+        { "id": "12-5", "level": "challenge", "type": "choice", "prompt": "ما لون الكرة الحادية عشرة؟", "visual": { "kind": "beads", "pattern": ["white", "white", "red"], "length": 12, "show": 6, "mark": 11 }, "options": ["أبيض", "أحمر"], "answer": "أبيض", "skill": "ordinal" },
+        { "id": "12-6", "level": "challenge", "type": "number", "prompt": "كم عدداً يقع بين ١٣ و٢١؟", "say": "كم عدداً يقع بين ثلاثة عشر وواحد وعشرين؟", "answer": 7, "hint": "١٤، ١٥، ١٦... عُدّها", "skill": "ordinal" }
+      ],
+      "exitTicket": {
+        "slot": null,
+        "items": [
+          { "id": "12-e1", "points": 1, "type": "choice", "prompt": "ما العدد بين ٨ و١٠؟", "say": "ما العدد بين ثمانية وعشرة؟", "options": [7, 9, 11], "answer": 9, "skill": "ordinal" },
+          { "id": "12-e2", "points": 2, "type": "choice", "prompt": "ما لون الكرة التاسعة؟", "visual": { "kind": "beads", "pattern": ["red", "blue"], "length": 10, "show": 6, "mark": 9 }, "options": ["أحمر", "أزرق"], "answer": "أحمر", "skill": "ordinal" },
+          { "id": "12-e3", "points": 2, "type": "choice", "prompt": "أيّ عدد يقع بين ١٧ و٢٠؟", "say": "أي عدد يقع بين سبعة عشر وعشرين؟", "options": [16, 18, 21], "answer": 18, "skill": "ordinal" }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "unit": 2,
+      "strand": "٢ أ",
+      "place": "عين رزات – صلالة",
+      "icon": "🎈",
+      "title": "أكثر من عشرة، الجمع بالضم، الطرح بالأخذ، وخط الأعداد",
+      "pages": [37, 42],
+      "bookTitles": ["أكثر من عشرة (ص ٣٧)", "الحقول (ص ٣٨)", "الأواني (ص ٣٩)", "أغلق البوابة! (ص ٤٠)", "خط الأعداد (ص ٤١)", "القفز خطوتين إلى الخلف (ص ٤٢)"],
+      "intro": "ما ناتج كل مجموعة من البالونات؟ استخدم أزواج العدد عشرة للمساعدة! ثم نضم الحقول، ونغلق البوابة، ونقفز على خط الأعداد.",
+      "objectives": [
+        { "code": "1Nc3", "text": "يجمع أكثر من عددين صغيرين مكتشفاً أزواج ١٠" },
+        { "code": "1Nc4", "text": "يستخدم أزواج ١٠ لتجاوز العشرة" },
+        { "code": "1Nc8", "text": "يفهم الجمع بوصفه ضمّاً لمجموعتين" },
+        { "code": "1Nc9", "text": "يفهم الطرح بوصفه أخذاً وعدّاً للخلف" },
+        { "code": "1Nc10", "text": "يجد الفرق بالعدّ التصاعدي على خط الأعداد" }
+      ],
+      "mentalCodes": ["1Nc1", "1Nc3", "1Nc4"],
+      "skills": ["addSub", "numberLine"],
+      "canDo": ["أستطيع أن أجمع ثلاثة أعداد مستخدماً أزواج ١٠", "أستطيع أن أطرح بالأخذ", "أستطيع أن أجد الفرق على خط الأعداد", "أستطيع أن أقفز خطوتين إلى الخلف"],
+      "vocabulary": [
+        { "word": "المجموع", "icon": "➕", "hint": "٦ + ٤ + ٨ = ١٨" },
+        { "word": "الجمع بالضم", "icon": "🤲", "hint": "نضم ما في الوعاءين معاً" },
+        { "word": "الطرح بالأخذ", "icon": "🚪", "hint": "تخرج بعض الخراف من البوابة فيقل العدد" },
+        { "word": "أوجد الفرق", "icon": "↔️", "hint": "الفرق بين ٥ و٨ هو ٣" },
+        { "word": "خط الأعداد", "icon": "📏", "hint": "نقفز عليه للأمام عند الجمع وللخلف عند الطرح" }
+      ],
+      "explorer": "addsub",
+      "planner": {
+        "warmup": "اصطد زوج العشرة: أقول ٧ فتقول الشعبة ٣ (1Nc1)، ثم ٦ + ٤ + ٥ (1Nc3)",
+        "strategy": "التعلم بالحركة – القفز على خط أعداد أرضي للأمام والخلف",
+        "resources": ["خط أعداد أرضي ٠–٢٠", "حيوانات بلاستيكية وحقول ورقية", "أوعية ومشابك وأزرار"]
+      },
+      "practice": [
+        { "id": "13-1", "level": "easy", "type": "choice", "prompt": "٦ + ٤ + ٨ = ؟", "say": "ستة زائد أربعة زائد ثمانية يساوي؟", "visual": { "kind": "balloons", "values": [6, 4, 8] }, "options": [16, 18, 20], "answer": 18, "hint": "٦ + ٤ = ١٠ ثم أضف ٨", "skill": "addSub" },
+        { "id": "13-2", "level": "easy", "type": "number", "prompt": "أوجد مجموع الوعاءين", "visual": { "kind": "groups", "groups": [{ "emoji": "🌼", "count": 5 }, { "emoji": "🌼", "count": 4 }], "op": "+" }, "answer": 9, "skill": "addSub" },
+        { "id": "13-3", "level": "medium", "type": "number", "prompt": "في الحقل ٨ خراف، خرج منها ٣ من البوابة. كم خروفاً بقي؟", "say": "في الحقل ثمانية خراف، خرج منها ثلاثة من البوابة. كم خروفاً بقي؟", "visual": { "kind": "objects", "emoji": "🐑", "count": 8, "crossed": 3 }, "answer": 5, "skill": "addSub" },
+        { "id": "13-4", "level": "medium", "type": "number", "prompt": "أوجد الفرق بين ٥ و٨", "say": "أوجد الفرق بين خمسة وثمانية", "visual": { "kind": "numberline", "from": 0, "to": 12, "jumps": [[5, 8]] }, "answer": 3, "hint": "عُدّ القفزات من ٥ إلى ٨", "skill": "numberLine" },
+        { "id": "13-5", "level": "challenge", "type": "number", "prompt": "يقف محمد على المربع ١٧ ويقفز خطوتين إلى الخلف. إلى أيّ مربع سيصل؟", "say": "يقف محمد على المربع سبعة عشر ويقفز خطوتين إلى الخلف. إلى أي مربع سيصل؟", "visual": { "kind": "numberline", "from": 10, "to": 20, "mark": [17] }, "answer": 15, "skill": "numberLine" },
+        { "id": "13-6", "level": "challenge", "type": "number", "prompt": "٣ + ٥ + ٧ = ؟", "say": "ثلاثة زائد خمسة زائد سبعة يساوي؟", "visual": { "kind": "balloons", "values": [3, 5, 7] }, "answer": 15, "hint": "ابحث عن زوج العشرة: ٣ + ٧", "skill": "addSub" }
+      ],
+      "exitTicket": {
+        "slot": "sqK4",
+        "items": [
+          { "id": "13-e1", "points": 1, "type": "choice", "prompt": "٤ + ٦ + ٣ = ؟", "say": "أربعة زائد ستة زائد ثلاثة يساوي؟", "options": [12, 13, 14], "answer": 13, "skill": "addSub" },
+          { "id": "13-e2", "points": 2, "type": "number", "prompt": "أوجد الفرق بين ٦ و٩", "say": "أوجد الفرق بين ستة وتسعة", "visual": { "kind": "numberline", "from": 0, "to": 12, "jumps": [] }, "answer": 3, "skill": "numberLine" },
+          { "id": "13-e3", "points": 2, "type": "number", "prompt": "١٢ − ٢ = ؟  (اقفز خطوتين إلى الخلف)", "say": "اثنا عشر ناقص اثنين يساوي؟ اقفز خطوتين إلى الخلف", "answer": 10, "skill": "numberLine" }
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "unit": 2,
+      "strand": "٢ أ",
+      "place": "شاطئ المغسيل – صلالة",
+      "icon": "👟",
+      "title": "ترتيب الأعداد والنقود العمانية",
+      "pages": [43, 45],
+      "bookTitles": ["كومة صناديق الأحذية (ص ٤٣)", "النقود (ص ٤٤–٤٥)"],
+      "intro": "ما أصغر مقاس حذاء؟ وما أكبر مقاس؟ رتّب الصناديق، ثم استخدم الأوراق النقدية العمانية لتشتري ما تريد.",
+      "objectives": [
+        { "code": "1Nn9", "text": "يرتب الأعداد حتى ٥٠ من الأصغر إلى الأكبر" },
+        { "code": "1Mm1", "text": "يتعرّف الأوراق النقدية العمانية (ريال، ٥ ريالات، ١٠ ريالات) ويجمع قيمها" },
+        { "code": "1Nc7", "text": "يعدّ بالخمسات والعشرات عند جمع النقود" }
+      ],
+      "mentalCodes": ["1Nc7"],
+      "skills": ["ordering", "money"],
+      "canDo": ["أستطيع أن أرتب الأعداد من الأصغر إلى الأكبر", "أستطيع أن أتعرف الأوراق النقدية العمانية", "أستطيع أن أدفع ثمن لعبة بالأوراق النقدية"],
+      "vocabulary": [
+        { "word": "مقاس الحذاء", "icon": "👟", "hint": "عدد يدل على طول الحذاء" },
+        { "word": "ريال", "icon": "💵", "hint": "ورقة نقدية عمانية قيمتها ريال واحد" },
+        { "word": "٥ ريالات", "icon": "💶", "hint": "ورقة واحدة تساوي خمسة ريالات" },
+        { "word": "١٠ ريالات", "icon": "💷", "hint": "ورقة واحدة تساوي عشرة ريالات" }
+      ],
+      "explorer": "shopmoney",
+      "planner": {
+        "warmup": "العدّ بالعشرات ثم بالخمسات على أوراق نقدية تعليمية (1Nc7)",
+        "strategy": "لعب الأدوار – متجر الألعاب ومحفظة النقود العمانية",
+        "resources": ["صناديق أحذية مرقمة", "أوراق نقدية عمانية تعليمية (١، ٥، ١٠)", "بطاقات أسعار"]
+      },
+      "practice": [
+        { "id": "14-1", "level": "easy", "type": "choice", "prompt": "ما أصغر مقاس حذاء؟", "visual": { "kind": "shoes", "sizes": [35, 25, 29, 23, 42] }, "options": [23, 25, 42], "answer": 23, "skill": "ordering" },
+        { "id": "14-2", "level": "easy", "type": "choice", "prompt": "كم ريالاً هنا؟", "visual": { "kind": "money", "notes": [10, 5] }, "options": [10, 15, 20], "answer": 15, "skill": "money" },
+        { "id": "14-3", "level": "medium", "type": "order", "prompt": "اكتب مقاسات الأحذية بالترتيب من الأصغر إلى الأكبر", "items": [35, 25, 29, 23, 42], "answer": [23, 25, 29, 35, 42], "skill": "ordering" },
+        { "id": "14-4", "level": "medium", "type": "choice", "prompt": "ثمن الزرافة ١٦ ريالاً. هل يكفي هذا المبلغ؟", "say": "ثمن الزرافة ستة عشر ريالاً. هل يكفي هذا المبلغ؟", "visual": { "kind": "money", "notes": [10, 5, 1] }, "options": ["نعم", "لا"], "answer": "نعم", "skill": "money" },
+        { "id": "14-5", "level": "challenge", "type": "number", "prompt": "عُدّ الأوراق النقدية: ما المجموع؟", "visual": { "kind": "money", "notes": [10, 10, 5, 5, 5] }, "answer": 35, "hint": "عُدّ العشرات أولاً ثم الخمسات", "skill": "money" },
+        { "id": "14-6", "level": "challenge", "type": "number", "prompt": "مع مريم ٣ أوراق من فئة ١٠ ريالات و٤ أوراق من فئة ٥ ريالات. كم ريالاً مع مريم؟", "say": "مع مريم ثلاث أوراق من فئة عشرة ريالات وأربع أوراق من فئة خمسة ريالات. كم ريالاً مع مريم؟", "answer": 50, "skill": "money" }
+      ],
+      "exitTicket": {
+        "slot": "sqPS2",
+        "items": [
+          { "id": "14-e1", "points": 1, "type": "choice", "prompt": "ما أكبر مقاس حذاء؟", "visual": { "kind": "shoes", "sizes": [35, 25, 29, 23, 42] }, "options": [35, 42, 29], "answer": 42, "skill": "ordering" },
+          { "id": "14-e2", "points": 2, "type": "number", "prompt": "كم ريالاً هنا؟", "visual": { "kind": "money", "notes": [10, 5, 1, 1] }, "answer": 17, "skill": "money" },
+          { "id": "14-e3", "points": 2, "type": "choice", "prompt": "مع خديجة ٥ أوراق نقدية مجموعها ٢٧ ريالاً. ما هذه الأوراق؟", "say": "مع خديجة خمس أوراق نقدية مجموعها سبعة وعشرون ريالاً. ما هذه الأوراق؟", "options": ["١٠، ١٠، ٥، ١، ١", "١٠، ٥، ٥، ٥، ١", "١٠، ١٠، ٥، ٥، ١"], "answer": "١٠، ١٠، ٥، ١، ١", "skill": "money" }
+        ]
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hw1",
+      "slot": "hwK1",
+      "domain": "knowledge",
+      "title": "واجب ١: الأعداد حتى ١٠ وتكوين العشرة",
+      "lessons": [1, 2],
+      "questions": [
+        { "id": "hw1-1", "type": "choice", "prompt": "كم عدد الموز؟", "visual": { "kind": "objects", "emoji": "🍌", "count": 3 }, "options": [2, 3, 4], "answer": 3, "skill": "counting" },
+        { "id": "hw1-2", "type": "number", "prompt": "كم عدد السيارات؟", "visual": { "kind": "objects", "emoji": "🚗", "count": 9, "scatter": true }, "answer": 9, "skill": "counting" },
+        { "id": "hw1-3", "type": "choice", "prompt": "كم بقي لتكوين ١٠؟", "visual": { "kind": "tenframe", "red": 8 }, "options": [1, 2, 3], "answer": 2, "skill": "makeTen" },
+        { "id": "hw1-4", "type": "number", "prompt": "ضعف العدد ٢ هو؟", "say": "ضعف العدد اثنين هو؟", "answer": 4, "skill": "doubles" },
+        { "id": "hw1-5", "type": "number", "prompt": "١٠ − ٥ = ؟", "say": "عشرة ناقص خمسة يساوي؟", "visual": { "kind": "tenframe", "red": 5, "removed": 5 }, "answer": 5, "skill": "makeTen" }
+      ]
+    },
+    {
+      "id": "hw2",
+      "slot": "hwK2",
+      "domain": "knowledge",
+      "title": "واجب ٢: أزواج الأعداد والأعداد حتى ٢٠",
+      "lessons": [4, 5],
+      "questions": [
+        { "id": "hw2-1", "type": "choice", "prompt": "٨ = ٥ + ؟", "say": "ثمانية تساوي خمسة زائد كم؟", "options": [2, 3, 4], "answer": 3, "skill": "pairs" },
+        { "id": "hw2-2", "type": "choice", "prompt": "ما العدد المفقود؟", "visual": { "kind": "track", "from": 10, "to": 20, "hide": [17] }, "options": [16, 17, 18], "answer": 17, "skill": "teens" },
+        { "id": "hw2-3", "type": "number", "prompt": "ضعف العدد ٥ هو؟", "say": "ضعف العدد خمسة هو؟", "answer": 10, "skill": "doubles" },
+        { "id": "hw2-4", "type": "order", "prompt": "رتّب من الأصغر إلى الأكبر", "items": [15, 11, 20, 13], "answer": [11, 13, 15, 20], "skill": "teens" },
+        { "id": "hw2-5", "type": "number", "prompt": "عُدّ: كم زراً؟", "visual": { "kind": "objects", "emoji": "🔘", "count": 14, "scatter": true }, "answer": 14, "skill": "estimate" }
+      ]
+    },
+    {
+      "id": "hw3",
+      "slot": "hwK3",
+      "domain": "knowledge",
+      "title": "واجب ٣: الأشكال والقياس",
+      "lessons": [3, 6, 8, 10],
+      "questions": [
+        { "id": "hw3-1", "type": "choice", "prompt": "ما اسم هذا الشكل؟", "visual": { "kind": "shapes", "items": ["circle"] }, "options": ["دائرة", "مربع", "مثلث"], "answer": "دائرة", "skill": "shapes" },
+        { "id": "hw3-2", "type": "choice", "prompt": "ما اسم هذا المجسم؟", "visual": { "kind": "solids", "items": ["cone"] }, "options": ["مخروط", "كرة", "مكعب"], "answer": "مخروط", "skill": "shapes" },
+        { "id": "hw3-3", "type": "choice", "prompt": "أيّهما أطول؟", "visual": { "kind": "lengths", "items": [{ "label": "الحبل", "len": 9, "color": "#b45309" }, { "label": "الشريط", "len": 6, "color": "#7c3aed" }] }, "options": ["الحبل", "الشريط"], "answer": "الحبل", "skill": "length" },
+        { "id": "hw3-4", "type": "choice", "prompt": "أيّهما أثقل؟", "visual": { "kind": "balance", "left": "🪶", "right": "🍉", "heavier": "right" }, "options": ["🪶 الريشة", "🍉 البطيخة"], "answer": "🍉 البطيخة", "skill": "weight" },
+        { "id": "hw3-5", "type": "choice", "prompt": "أيّها يتسع للكمية الأكثر؟", "visual": { "kind": "containers", "items": [{ "label": "أ", "h": 40, "w": 40, "color": "#22c55e" }, { "label": "ب", "h": 90, "w": 70, "color": "#3b82f6" }] }, "options": ["أ", "ب"], "answer": "ب", "skill": "capacity" }
+      ]
+    },
+    {
+      "id": "hw4",
+      "slot": "hwK4",
+      "domain": "knowledge",
+      "title": "واجب ٤: الزوجي والفردي والجمع والطرح",
+      "lessons": [11, 12, 13],
+      "questions": [
+        { "id": "hw4-1", "type": "choice", "prompt": "هل العدد زوجي أم فردي؟", "visual": { "kind": "pairs", "emoji": "👟", "count": 8 }, "options": ["زوجي", "فردي"], "answer": "زوجي", "skill": "oddEven" },
+        { "id": "hw4-2", "type": "choice", "prompt": "ما العدد بين ١٤ و١٦؟", "say": "ما العدد بين أربعة عشر وستة عشر؟", "options": [13, 15, 17], "answer": 15, "skill": "ordinal" },
+        { "id": "hw4-3", "type": "number", "prompt": "٧ + ٣ + ٥ = ؟", "say": "سبعة زائد ثلاثة زائد خمسة يساوي؟", "answer": 15, "skill": "addSub" },
+        { "id": "hw4-4", "type": "number", "prompt": "٩ − ٤ = ؟", "say": "تسعة ناقص أربعة يساوي؟", "visual": { "kind": "objects", "emoji": "🐑", "count": 9, "crossed": 4 }, "answer": 5, "skill": "addSub" },
+        { "id": "hw4-5", "type": "number", "prompt": "اقفز خطوتين إلى الخلف من ١٤", "say": "اقفز خطوتين إلى الخلف من أربعة عشر", "visual": { "kind": "numberline", "from": 10, "to": 20, "mark": [14] }, "answer": 12, "skill": "numberLine" }
+      ]
+    },
+    {
+      "id": "hwps",
+      "slot": "hwPS",
+      "domain": "problem",
+      "title": "واجب حل المشكلات: متجر الألعاب",
+      "lessons": [9, 14],
+      "questions": [
+        { "id": "hwps-1", "type": "number", "prompt": "ثمن الكرة ٥ ريالات وثمن الدمية ١٠ ريالات. كم ثمنهما معاً؟", "say": "ثمن الكرة خمسة ريالات وثمن الدمية عشرة ريالات. كم ثمنهما معاً؟", "answer": 15, "skill": "money" },
+        { "id": "hwps-2", "type": "choice", "prompt": "معك ورقتان من فئة ٥ ريالات. هل تكفي لشراء لعبة بـ ٩ ريالات؟", "say": "معك ورقتان من فئة خمسة ريالات. هل تكفي لشراء لعبة بتسعة ريالات؟", "visual": { "kind": "money", "notes": [5, 5] }, "options": ["نعم", "لا"], "answer": "نعم", "skill": "money" },
+        { "id": "hwps-3", "type": "number", "prompt": "اشتريت كعكة بـ ٣ ريالات ودفعت ١٠ ريالات. كم ريالاً يبقى لك؟", "say": "اشتريت كعكة بثلاثة ريالات ودفعت عشرة ريالات. كم ريالاً يبقى لك؟", "answer": 7, "skill": "money" },
+        { "id": "hwps-4", "type": "choice", "prompt": "يغلق المطعم الساعة ٢. ما الساعة التي تظهر؟", "say": "يغلق المطعم الساعة الثانية. هل هذه الساعة صحيحة؟", "visual": { "kind": "clock", "hour": 2 }, "options": ["نعم، الساعة الثانية", "لا، الساعة الثالثة"], "answer": "نعم، الساعة الثانية", "skill": "time" },
+        { "id": "hwps-5", "type": "number", "prompt": "مع سالم ٤ أوراق من فئة ٥ ريالات. كم ريالاً معه؟", "say": "مع سالم أربع أوراق من فئة خمسة ريالات. كم ريالاً معه؟", "visual": { "kind": "money", "notes": [5, 5, 5, 5] }, "answer": 20, "skill": "money" }
+      ]
+    }
+  ],
+  "badges": [
+    { "id": "first-star", "title": "النجمة الأولى", "icon": "⭐", "desc": "أكملت أول محطة" },
+    { "id": "hajar-climber", "title": "متسلّق جبال الحجر", "icon": "⛰️", "desc": "أكملت ٥ محطات من الوحدة الأولى" },
+    { "id": "muttrah-sailor", "title": "بحّار مطرح", "icon": "⛵", "desc": "أكملت الوحدة الأولى كاملة" },
+    { "id": "sharqiya-explorer", "title": "مستكشف رمال الشرقية", "icon": "🐪", "desc": "بدأت الوحدة الثانية" },
+    { "id": "salalah-champion", "title": "بطل واحات صلالة", "icon": "🌴", "desc": "أكملت الفصل الدراسي الأول" },
+    { "id": "three-stars", "title": "صائد النجوم", "icon": "🌟", "desc": "حصلت على ٣ نجوم في ٥ محطات" },
+    { "id": "mental-math", "title": "خنجر الحساب الذهني", "icon": "🗡️", "desc": "حققت ١٠٠ نقطة في ساحة الألعاب" },
+    { "id": "frankincense", "title": "عبير اللبان", "icon": "🏺", "desc": "أنجزت ٣ تذاكر خروج بالدرجة الكاملة" }
+  ]
+}
