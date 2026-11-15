@@ -4,10 +4,13 @@
 // - المؤثرات: Web Audio API (نغمات مولّدة برمجياً – لا ملفات خارجية)
 // =====================================================================
 
+import { isEn, t } from '../i18n/index.js';
+
 const PREFS_KEY = 'g1math.audio';
 
 const state = {
   voice: null,
+  enVoice: null,
   voicesReady: false,
   muted: false,
   rate: 0.85,
@@ -44,6 +47,14 @@ function pickVoice() {
       break;
     }
   }
+  const enOrder = ['en-GB', 'en-US', 'en-AU', 'en'];
+  for (const lang of enOrder) {
+    const v = voices.find((x) => x.lang?.toLowerCase().replace('_', '-').startsWith(lang.toLowerCase()));
+    if (v) {
+      state.enVoice = v;
+      break;
+    }
+  }
   state.voicesReady = true;
 }
 
@@ -54,6 +65,7 @@ if (synth) {
 
 /** هل يتوفر صوت عربي على هذا الجهاز؟ */
 export function hasArabicVoice() {
+  if (isEn()) return true; // English voices are available on virtually every device
   return Boolean(state.voice);
 }
 
@@ -94,9 +106,11 @@ export function speak(text, { rate, interrupt = true } = {}) {
     try {
       if (interrupt) synth.cancel();
       if (!state.voicesReady) pickVoice();
-      const u = new SpeechSynthesisUtterance(String(text));
-      u.lang = state.voice?.lang || 'ar-SA';
-      if (state.voice) u.voice = state.voice;
+      const en = isEn();
+      const u = new SpeechSynthesisUtterance(String(en ? t(text) : text));
+      const voice = en ? state.enVoice : state.voice;
+      u.lang = voice?.lang || (en ? 'en-GB' : 'ar-SA');
+      if (voice) u.voice = voice;
       u.rate = rate ?? state.rate;
       u.pitch = 1.05;
       u.onend = () => resolve();

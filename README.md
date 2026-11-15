@@ -168,3 +168,19 @@ oman-grade1-math-pwa/
 - إطار منهج كامبريدج للرياضيات – المرحلة الأولى (رموز الأهداف مثل 1Nc1–1Nc7).
 
 الأوراق النقدية والرسوم في التطبيق نماذج تعليمية مبسّطة وليست صوراً للعملة الحقيقية.
+
+---
+
+## 🌐 العربية ⇄ English (Language toggle)
+
+زر عائم **«🌐 English / العربية»** في أسفل كل صفحة يبدّل لغة الواجهة كاملة (النصوص، اتجاه الصفحة RTL/LTR، الأرقام، النطق الصوتي)، ويُحفظ الاختيار على الجهاز.
+
+A floating **🌐 English / العربية** button on every page switches the whole interface: text, page direction (RTL/LTR), digits (٠-٩ ⇄ 0-9), number words, and speech voice (Arabic ⇄ English). The choice is saved on the device.
+
+| File | Role |
+|---|---|
+| `src/i18n/en.json` | Dictionary: `plain` (exact Arabic → English) and `tpl` (patterns with `{0}` placeholders) |
+| `src/i18n/index.js` | Runtime: translates rendered text + `placeholder`/`title`/`aria-label`/`alt`, sets `dir`/`lang`, exposes `t()` |
+| `src/i18n/LangToggle.jsx` | The toggle button and the root wrapper that re-renders the app on switch |
+
+**Adding or fixing a translation:** edit `src/i18n/en.json`. In English mode, run `i18nMisses()` in the browser console to list any Arabic strings that still have no translation. Add `data-i18n-skip` to an element to keep it untranslated.

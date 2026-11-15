@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { useApp } from '../../context/AppContext.jsx';
 import { earnedBadges, BADGES } from '../../data/index.js';
 import Avatar from '../../components/ui/Avatar.jsx';
+import { locale, t } from '../../i18n/index.js';
 
 const TEMPLATES = [
   { id: 'excellence', title: 'شهادة تميّز', color: '#0f4c5c', accent: '#d97706', icon: '🏆' },
@@ -65,7 +66,7 @@ export default function Rewards() {
   const girl = student?.gender === 'f';
   const badges = useMemo(() => earnedBadges(state.progress[sid]), [state.progress, sid]);
   const finalReason = custom.trim() || (girl ? reason.replace('لإتقانه', 'لإتقانها').replace('لتميّزه', 'لتميّزها').replace('لإكماله', 'لإكمالها').replace('لمشاركته', 'لمشاركتها').replace('لإبداعه', 'لإبداعها').replace('لاجتهاده وتحسّن مستواه', 'لاجتهادها وتحسّن مستواها').replace('لحصوله', 'لحصولها') : reason);
-  const date = new Date().toLocaleDateString('ar-OM', { year: 'numeric', month: 'long', day: 'numeric' });
+  const date = new Date().toLocaleDateString(locale(), { year: 'numeric', month: 'long', day: 'numeric' });
 
   const message = `السلام عليكم ورحمة الله،
 وليّ أمر ${girl ? 'التلميذة' : 'التلميذ'} ${student?.name} المحترم،
@@ -73,7 +74,7 @@ export default function Rewards() {
 نشكر لكم متابعتكم وشراكتكم الإيجابية 🌟
 ${state.settings.teacherName} – ${state.settings.className}`;
 
-  const waLink = `https://wa.me/${normalizePhone(phone)}?text=${encodeURIComponent(message)}`;
+  const waLink = `https://wa.me/${normalizePhone(phone)}?text=${encodeURIComponent(t(message))}`;
 
   return (
     <div className="flex flex-col gap-4">

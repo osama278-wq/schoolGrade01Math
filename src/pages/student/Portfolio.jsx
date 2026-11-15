@@ -5,6 +5,7 @@ import { PROJECT_IDEAS } from '../../data/assessment.js';
 import { SpeakButton, SectionTitle, Modal } from '../../components/ui/index.jsx';
 import { speak, sfx } from '../../utils/speech.js';
 import { toAr } from '../../utils/arabic.js';
+import { locale } from '../../i18n/index.js';
 
 /** تصغير صورة إلى Data URL (لحفظها محلياً دون تضخيم التخزين) */
 function resizeImage(file, max = 900) {
@@ -179,7 +180,7 @@ export default function Portfolio() {
                 <div className="text-sm font-black text-oman-800">{it.title}</div>
                 {it.note && <div className="line-clamp-2 text-xs text-oman-600">{it.note}</div>}
                 {it.audio && <audio controls src={it.audio} className="mt-1 w-full" />}
-                <div className="text-[11px] text-slate-500">{new Date(it.ts).toLocaleDateString('ar-OM')}</div>
+                <div className="text-[11px] text-slate-500">{new Date(it.ts).toLocaleDateString(locale())}</div>
               </figcaption>
               <button className="absolute left-1 top-1 h-9 w-9 rounded-full bg-white/90 text-sm shadow" onClick={() => removePortfolio(sid, it.id)} aria-label="حذف">
                 🗑️
